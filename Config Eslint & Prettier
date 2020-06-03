@@ -1,0 +1,21 @@
+npm init
+npm install --save-dev eslint prettier
+./node_modules/.bin/eslint --init
+npm install --save-dev eslint-plugin-prettier
+npm install --save-dev eslint-config-prettier
+
+config eslintrc.json : 
+
+	{
+	  "extends": [
+	    "airbnb-base",
+	    "prettier"
+	  ],
+	  "plugins": ["prettier"],
+	  "rules": {
+	    "prettier/prettier": "error"
+	  }
+	}
+	
+
+Sumber Artikel : https://gattigaga.com/id/article/eslint-dan-prettier-adalah-kombinasi-terbaik
